@@ -1,6 +1,6 @@
 namespace :regions do
   desc 'Import all regions from Carmen'
-  task :import do
+  task import: :environment do
     ScrapeCarmen.run
   end
 end
