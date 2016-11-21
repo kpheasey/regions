@@ -40,9 +40,6 @@ region = Region.countries.find_by(code: 'US')
 region.name
  => "United States"
  
-region.regions.count
- => 60
- 
 region.regions.first.category
  => "state"
  
